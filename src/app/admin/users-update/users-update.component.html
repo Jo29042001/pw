@@ -1,0 +1,18 @@
+<div class="update">
+    <h3>Update User Details</h3>
+    <p class="message-p">{{userMessage}}</p>
+    <form #updateUser="ngForm" (ngSubmit)="submit(updateUser.value)" class="common-form">
+        <!-- <input type="text" class="form-input" placeholder="Enter UserId" name="userId" ngModel="{{userData?.userId}}" /> -->
+        <input type="text" class="form-input" placeholder="Enter Name" name="username" ngModel="{{userData?.username}}" />
+        <input type="text" class="form-input" placeholder="Enter Email" name="email" ngModel="{{userData?.email}}"/>
+        <input type="text" class="form-input" placeholder="Enter Password" name="password" ngModel="{{userData?.password}}" value="userData?.password" readonly/>
+        <input type="text" class="form-input" placeholder="Enter City" name="city" ngModel="{{userData?.city}}" />
+        <input type="text" class="form-input" placeholder="Enter State" name="state" ngModel="{{userData?.state}}" />
+        <input type="text" class="form-input" placeholder="Enter Pincode" name="pincode" ngModel="{{userData?.pincode}}" />
+        <input type="text" class="form-input" placeholder="Enter Mobile Number" name="mobileNumber" ngModel="{{userData?.mobileNumber}}"/>
+        <!-- <input type="password" class="form-input" placeholder="Enter Password" name="password" /> -->
+        <button class="form-button">Update User</button>
+
+    </form>
+</div>
+

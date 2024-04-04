@@ -1,0 +1,69 @@
+<div class="seller-login">
+  <div class="sign-up">
+    <h2>Seller Sign-up</h2>
+    <form [formGroup]="sellerForm" (ngSubmit)="signUp(sellerForm.value)" class="common-form">
+      <div>
+        <input type="text" class="form-input" placeholder="Enter Name" name="username" formControlName="username" pattern="^[a-zA-Z ]+$" required minlength="4" />
+        <div *ngIf="sellerForm.controls['username'].invalid && (sellerForm.controls['username'].dirty || sellerForm.controls['username'].touched)" class="error-message">
+          <span *ngIf="sellerForm.controls['username'].errors?.['required']" class="error">Username is required.</span>
+          <span *ngIf="sellerForm.get('username')?.hasError('minlength')" class="error">Username must be at least 4 characters long.</span>
+        </div>
+      </div>
+      <div>
+        <input type="text" class="form-input" placeholder="Enter Email" name="email" formControlName="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required email />
+        <div *ngIf="sellerForm.controls['email'].invalid && (sellerForm.controls['email'].dirty || sellerForm.controls['email'].touched)" class="error-message">
+          <span *ngIf="sellerForm.controls['email'].errors?.['required']" class="error">Email is required.</span>
+          <span *ngIf="sellerForm.controls['email'].errors?.['email']" class="error">Invalid email format.</span>
+        </div>
+      </div>
+      <div>
+        <input type="password" class="form-input" placeholder="Enter Password" name="password" formControlName="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#\$%\^&\*\(\)\-+=])(?=\S+).{8,20}$" required minlength="6" />
+        <div *ngIf="sellerForm.controls['password'].invalid && (sellerForm.controls['password'].dirty || sellerForm.controls['password'].touched)" class="error-message">
+          <span *ngIf="sellerForm.controls['password'].errors?.['required']" class="error">Password is required.</span>
+          <span *ngIf="sellerForm.get('password')?.hasError('minlength')" class="error">Password must be 6 characters long.</span>
+        </div>
+      </div>
+      <div>
+        <input type="text" class="form-input" placeholder="Enter House no." name="houseno" formControlName="houseno" required />
+        <div *ngIf="sellerForm.controls['houseno'].invalid && (sellerForm.controls['houseno'].dirty || sellerForm.controls['houseno'].touched)" class="error-message">
+          <span *ngIf="sellerForm.controls['houseno'].errors?.['required']" class="error">House No. is required.</span>
+        </div>
+      </div>
+      <div>
+        <input type="text" class="form-input" placeholder="Enter Area or Street" name="area" formControlName="area" required />
+        <div *ngIf="sellerForm.controls['area'].invalid && (sellerForm.controls['area'].dirty || sellerForm.controls['area'].touched)" class="error-message">
+          <span *ngIf="sellerForm.controls['area'].errors?.['required']" class="error">Area or Street is required.</span>
+        </div>
+      </div>
+      <div>
+        <input type="text" class="form-input" placeholder="Enter City" name="city" formControlName="city" required />
+        <div *ngIf="sellerForm.controls['city'].invalid && (sellerForm.controls['city'].dirty || sellerForm.controls['city'].touched)" class="error-message">
+          <span *ngIf="sellerForm.controls['city'].errors?.['required']" class="error">City is required.</span>
+        </div>
+      </div>
+      <div>
+        <input type="text" class="form-input" placeholder="Enter State" name="state" formControlName="state" required />
+        <div *ngIf="sellerForm.controls['state'].invalid && (sellerForm.controls['state'].dirty || sellerForm.controls['state'].touched)" class="error-message">
+          <span *ngIf="sellerForm.controls['state'].errors?.['required']" class="error">State is required.</span>
+        </div>
+      </div>
+      <div>
+        <input type="text" class="form-input" placeholder="Enter Pincode" name="pincode" formControlName="pincode" required />
+        <div *ngIf="sellerForm.controls['pincode'].invalid && (sellerForm.controls['pincode'].dirty || sellerForm.controls['pincode'].touched)" class="error-message">
+          <span *ngIf="sellerForm.controls['pincode'].errors?.['required']" class="error">Pincode is required.</span>
+        </div>
+      </div>
+      <div>
+        <input type="text" class="form-input" placeholder="Enter Mobile Number" name="mobileNumber" formControlName="mobileNumber" pattern="[0-9]{10}" required  />
+        <div *ngIf="sellerForm.controls['mobileNumber'].invalid && (sellerForm.controls['mobileNumber'].dirty || sellerForm.controls['mobileNumber'].touched)" class="error-message">
+          <span *ngIf="sellerForm.controls['mobileNumber'].errors?.['required']" class="error">Mobile Number is required.</span>
+        </div>
+      </div>
+      <input type="text" class="form-input" name="role" value="SELLER" disabled="true"/>
+
+      <button class="form-button" [disabled]="sellerForm.invalid">Sign Up</button>
+      <p>Already have account? <a class="auth-toggle-link" (click)="openLogin()">Click for Login</a></p>
+    </form>
+  </div>
+</div>
+

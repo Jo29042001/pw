@@ -1,0 +1,14 @@
+<div class="update">
+    <h3>Update Order Details</h3>
+    <p class="message-p">{{orderMessage}}</p>
+    <form #updateOrder="ngForm" (ngSubmit)="submit(updateOrder.value)" class="common-form">
+        <input type="text" class="form-input" placeholder="Enter UserId" name="userId" ngModel="{{orderData?.userId}}" />
+        <input type="text" class="form-input" placeholder="Enter User Name" name="username" ngModel="{{orderData?.username}}" />
+        <input type="text" class="form-input" placeholder="Enter Email" name="email" ngModel="{{orderData?.email}}"/>
+        <input type="text" class="form-input" placeholder="Enter Address" name="address" ngModel="{{orderData?.address}}"/>
+        <input type="text" class="form-input" placeholder="Enter Contact" name="contact" ngModel="{{orderData?.contact}}"/>
+        <input type="text" class="form-input" placeholder="Enter Total Price" name="totalPrice" ngModel="{{orderData?.totalPrice}}"/>
+        <button class="form-button">Update Order</button>
+
+    </form>
+</div>

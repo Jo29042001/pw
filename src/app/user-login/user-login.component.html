@@ -1,0 +1,25 @@
+<div class="seller-login">
+  <div class="login">
+    <h2>User Login</h2>
+    <p class="error-p">{{loginError}}</p>
+    <form [formGroup]="userForm" (ngSubmit)="login(userForm.value)" class="common-form">
+      <div>
+        <input type="text" class="form-input" placeholder="Enter Email" name="email" formControlName="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required email />
+        <div *ngIf="userForm.controls['email'].invalid && (userForm.controls['email'].dirty || userForm.controls['email'].touched)" class="error-message">
+          <span *ngIf="userForm.controls['email'].errors?.['required']" class="error">Email is required.</span>
+          <span *ngIf="userForm.controls['email'].errors?.['email']" class="error">Invalid email format.</span>
+        </div>
+      </div>
+      <div>
+        <input type="password" class="form-input" placeholder="Enter Password" name="password" formControlName="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#\$%\^&\*\(\)\-+=])(?=\S+).{8,20}$" required minlength="6" />
+        <div *ngIf="userForm.controls['password'].invalid && (userForm.controls['password'].dirty || userForm.controls['password'].touched)" class="error-message">
+          <span *ngIf="userForm.controls['password'].errors?.['required']" class="error">Password is required.</span>
+          <span *ngIf="userForm.get('password')?.hasError('minlength')" class="error">Password must be 6 characters long.</span>
+        </div>
+      </div>
+      <button class="form-button" [disabled]="userForm.invalid">Login</button>
+      <p>Don't have account? <a class="auth-toggle-link" (click)="openSignup()">Click for Sign-up</a></p>
+
+    </form>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="update">
+    <h3>Update Shipper Details</h3>
+    <p class="message-p">{{shipperMessage}}</p>
+    <form #updateShipper="ngForm" (ngSubmit)="submit(updateShipper.value)" class="common-form">
+        <!-- <input type="text" class="form-input" placeholder="Enter SellerId" name="sellerId" ngModel="{{shipperData?.sellerId}}" /> -->
+        <input type="text" class="form-input" placeholder="Enter Name" name="username" ngModel="{{shipperData?.username}}" />
+        <input type="text" class="form-input" placeholder="Enter Email" name="email" ngModel="{{shipperData?.email}}"/>
+        <input type="text" class="form-input" placeholder="Enter Password" name="password" ngModel="{{shipperData?.password}}" value="shipperData?.password" readonly/>
+        <input type="text" class="form-input" placeholder="Enter City" name="city" ngModel="{{shipperData?.city}}" />
+        <input type="text" class="form-input" placeholder="Enter State" name="state" ngModel="{{shipperData?.state}}" />
+        <input type="text" class="form-input" placeholder="Enter Pincode" name="pincode" ngModel="{{shipperData?.pincode}}" />
+        <input type="text" class="form-input" placeholder="Enter Mobile Number" name="mobileNumber" ngModel="{{shipperData?.mobileNumber}}"/>
+        <button class="form-button">Update Shipper</button>
+
+    </form>
+</div>
+
+
+

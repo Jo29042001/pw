@@ -1,0 +1,25 @@
+<div class="shipper-login">
+    <div class="login">
+      <h2>Shipper Login</h2>
+      <p class="error-p">{{loginError}}</p>
+      <form [formGroup]="shipperForm" (ngSubmit)="login(shipperForm.value)" class="common-form">
+        <div>
+          <input type="text" class="form-input" placeholder="Enter Email" name="email" formControlName="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required email />
+          <div *ngIf="shipperForm.controls['email'].invalid && (shipperForm.controls['email'].dirty || shipperForm.controls['email'].touched)" class="error-message">
+            <span *ngIf="shipperForm.controls['email'].errors?.['required']" class="error">Email is required.</span>
+            <span *ngIf="shipperForm.controls['email'].errors?.['email']" class="error">Invalid email format.</span>
+          </div>
+        </div>
+        <div>
+          <input type="password" class="form-input" placeholder="Enter Password" name="password" formControlName="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#\$%\^&\*\(\)\-+=])(?=\S+).{8,20}$" required minlength="6" />
+          <div *ngIf="shipperForm.controls['password'].invalid && (shipperForm.controls['password'].dirty || shipperForm.controls['password'].touched)" class="error-message">
+            <span *ngIf="shipperForm.controls['password'].errors?.['required']" class="error">Password is required.</span>
+            <span *ngIf="shipperForm.get('password')?.hasError('minlength')" class="error">Password must be 6 characters long.</span>
+          </div>
+        </div>
+        <button class="form-button" [disabled]="shipperForm.invalid">Login</button>
+        <p>Don't have account? <a class="auth-toggle-link" (click)="openSignup()">Click for Sign-up</a></p>
+  
+      </form>
+    </div>
+  </div>

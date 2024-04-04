@@ -1,0 +1,43 @@
+<app-admin-header></app-admin-header>
+<!-- The sidebar -->
+<div class="sidebar">
+  <a href="admin/users">Users</a>
+    <a href="admin/sellers">Sellers</a>
+    <a href="admin/shippers">Shippers</a>
+    <a href="admin/products">Products</a>
+    <a href="admin/orders">Orders</a>
+</div>
+<div class="search">
+  <input class="search-bar" type="text" name="productName"[(ngModel)]="productName" (ngModelChange)="Search()" placeholder="Search By Product Name">
+</div>
+<!-- Page content -->
+<div class="content">
+  <h2>Products</h2>
+  <p>{{productMessage}}</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <!-- <th>Product ID</th> -->
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{product.id}}</td>
+        <!-- <td>{{product.productId}}</td> -->
+        <td>{{product.productName}}</td>
+        <td>{{product.productPrice}}</td>
+        <td>
+            
+          <a class="adjust-update-link" routerLink="/admin/products-update/{{product.id}}" [skipLocationChange]="true"> <fa-icon  [icon]="iconEdit"></fa-icon></a>  
+          <a class="adjust-delete-link"> <fa-icon (click)="deleteProduct(product.id)" [icon]="icon"></fa-icon></a>
+         
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

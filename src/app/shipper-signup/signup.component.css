@@ -1,0 +1,46 @@
+.sign-up{
+    text-align: center;
+}
+.sign-up h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #2F3C7E;   
+}
+.auth-toggle-link{
+    color: #2F3C7E;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+}
+.form-button{
+    background-color: #2F3C7E;
+    color: white;
+}
+a{
+    cursor: pointer;
+}
+
+p{
+  font-size: 10px;
+}
+.form-button:disabled {
+    background-color: #ddd;
+    cursor: default;
+  }
+  
+  .error {
+    color: red;
+    font-size: smaller;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transform: translateY(-100%)
+  }
+  .error-message{
+    transform: translateY(-100%)
+  }
+  
+  .auth-toggle-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  

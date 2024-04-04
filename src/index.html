@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ShoppingCart</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script
+    src="https://www.paypal.com/sdk/js?currency=USD&client-id=AVBC5LP3VcLo8_Z0v4GBZddYnrAKukFVzhT762t4ImVWFvabom0jbfcjTe1j_bjIicWejMpioIsyF3Sb">
+ 
+    </script>
+</head>
+
+<body>
+  <button onclick="subscribe()">subscribe</buton>
+  <script>
+    addEventListener('load',async()=>{
+      let sw= await navigator.serviceWorker.register('./sw.js')
+      console.log(sw)
+    
+    })
+
+    async function subscribe(){
+      let sw = await navigator.serviceWorker.ready;
+      let push = await sw.pushManager.subscribe({
+        userVisibleOnly:true, 
+        applicationServerKey:'BNyZC1CnuUAxz1cymU2M1BTibrO4STHAyYChfH8Jp6fs3w5riubhgdfcZLxxnnl79P6l3xMPbLBf3ianHjyuvyo'
+      }) 
+      console.log(JSON.stringify(push));
+    } 
+  </script>
+  <app-root></app-root>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.product-details{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.product-details .product-img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.quantity-group{
+    margin-top: 20px;
+}
+.quantity-group button{
+    padding: 7px;
+    background-color: #2F3C7E;
+    color: white;
+    border-color: #2F3C7E;
+}
+.quantity-group input{
+    padding: 7px;
+    width: 40px;
+}
+.form-button{
+    justify-content:space-between;
+    margin: 1px;
+}

@@ -1,0 +1,40 @@
+.login{
+    text-align: center;
+}
+.login h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #2F3C7E;   
+}
+.auth-toggle-link{
+    color: #2F3C7E;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+}
+.common-form{
+    margin-top: 80px;
+}
+.form-button{
+    background-color: #2F3C7E;
+    color: white;
+}
+a{
+    cursor: pointer;
+}
+.form-button:disabled {
+    background-color: #ddd;
+    cursor: default;
+  }
+  
+  .error {
+    color: red;
+    font-size: smaller;
+    margin-top: 5px;
+    transform: translateY(-100%)
+  }
+  
+  .auth-toggle-link {
+    color: #007bff;
+    text-decoration: none; /* Removes underline */
+  }

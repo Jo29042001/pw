@@ -1,0 +1,50 @@
+<app-admin-header></app-admin-header>
+<div class="sidebar">
+  <a href="admin/users">Users</a>
+  <a href="admin/sellers">Sellers</a>
+  <a href="admin/shippers">Shippers</a>
+  <a href="admin/products">Products</a>
+  <a href="admin/orders">Orders</a>
+</div>
+<!-- search content -->
+<div class="search">
+  <input class="search-bar" type="text" name="productName" [(ngModel)]="userId" (ngModelChange)="Search()"
+    placeholder="Search By Order Name">
+</div>
+<!-- Page content -->
+<div class="content">
+  <h2>Orders</h2>
+  <p>{{orderMessage}}</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>OrderID</th>
+        <th>UserID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Contact</th>
+        <th>Total Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>{{order.id}}</td>
+        <td>{{order.userId}}</td>
+        <td>{{order.username}}</td>
+        <td>{{order.email}}</td>
+        <td>{{order.address}}</td>
+        <td>{{order.contact}}</td>
+        <td>{{order.totalPrice}}</td>
+        <td>
+
+          <a class="adjust-update-link" routerLink="/admin/orders-update/{{order.id}}" [skipLocationChange]="true"> <fa-icon
+              [icon]="iconEdit"></fa-icon></a>
+          <a class="adjust-delete-link"> <fa-icon (click)="deleteOrder(order.id)" [icon]="icon"></fa-icon></a>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

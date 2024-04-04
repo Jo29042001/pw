@@ -1,0 +1,419 @@
+{
+  "seller": [
+    {
+      "id": "ec0c",
+      "username": "Ranjani",
+      "password": "Ranju@12",
+      "email": "ranjani@gmail.com",
+      "houseno": "3a/c,",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "7654567899"
+    },
+    {
+      "sellerId": "",
+      "username": "Surya",
+      "email": "surya@gmail.com",
+      "password": "Surya@1234",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "6376895322",
+      "id": "a3a1"
+    },
+    {
+      "id": "1d0d",
+      "username": "Jothi",
+      "password": "Jothi@123",
+      "email": "jothi@gmail.com",
+      "houseno": "3a/c,",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "8790475675"
+    },
+    {
+      "id": "1da0",
+      "username": "Sabitha",
+      "password": "Sabi@1234",
+      "email": "sabitha@gmail.com",
+      "houseno": "3a/c,",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "8790475675"
+    },
+    {
+      "id": "5233",
+      "username": "Sathya",
+      "password": "Sathya@12",
+      "email": "sathya@gmail.com",
+      "houseno": "3a/c",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "6376895322",
+      "role": "SELLER"
+    },
+    {
+      "id": "33a1",
+      "username": "Sadhana",
+      "password": "Sadhu@12",
+      "email": "sadhana@gmail.com",
+      "houseno": "3a/c,",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "8790475675",
+      "role": "SELLER"
+    },
+    {
+      "id": "273b",
+      "username": "Sidharth",
+      "password": "Sidhu@123",
+      "email": "sidharth@gmail.com",
+      "houseno": "3a/c,",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "8790475675",
+      "role": "SELLER"
+    },
+    {
+      "id": "273d",
+      "username": "seetha",
+      "password": "Seetha@123",
+      "email": "seetha@gmail.com",
+      "houseno": "12",
+      "area": "Tnagar",
+      "city": "chennai",
+      "state": "Tamil Nadu",
+      "pincode": "626123",
+      "mobileNumber": "7094200620",
+      "role": "SELLER"
+    },
+    {
+      "id": "5a21",
+      "username": "vinitha",
+      "password": "Vinitha@123",
+      "email": "vinitha@gmail.com",
+      "houseno": "12",
+      "area": "Tnagar",
+      "city": "chennai",
+      "state": "Tamil Nadu",
+      "pincode": "626123",
+      "mobileNumber": "7094200620",
+      "role": "SELLER"
+    }
+  ],
+  "products": [
+    {
+      "id": "7eb2",
+      "productName": "Bluetooth neck band",
+      "productPrice": 1499,
+      "productCategory": "Electronics",
+      "productDescription": "Bluetooth neck band",
+      "productImage": "https://storage.googleapis.com/shy-pub/34186/1629541896483_neckband.png"
+    },
+    {
+      "id": "0107",
+      "productName": "Iphone 14",
+      "productPrice": 69999,
+      "productDescription": "iphone 14",
+      "productImage": "https://atlas-content-cdn.pixelsquid.com/assets_v2/296/2962610729624016433/jpeg-600/G03.jpg?modifiedAt=1"
+    },
+    {
+      "id": "6fe6",
+      "productName": "Boat Earbuds",
+      "productPrice": 499,
+      "productDescription": "Buy latest wireless earbuds from boAt - India's No.1 Truly Wireless Brand.",
+      "productImage": "https://suprememobiles.in/cdn/shop/products/Boat-Airpodes-138-Earbuds_794b9f30-42ff-44a7-ae08-755775d71e4b.jpg?v=1664342796&width=1080"
+    },
+    {
+      "id": "a655",
+      "productName": "Red Soft Toy Teddy",
+      "productPrice": 590,
+      "productDescription": "Soft and cuddly teddy bear plush toy perfect for children and adults alike",
+      "productImage": "https://png.pngtree.com/png-vector/20240209/ourlarge/pngtree-red-teddy-bear-white-background-copy-png-image_11735590.png"
+    },
+    {
+      "id": "1755",
+      "productName": "Intex 32 inch LED TV",
+      "productPrice": 16999,
+      "productDescription": "Intex's smart LED TV lineup includes both 4K UHD and HD models, as well as Android TVs with 32\" screens or larger.",
+      "productImage": "https://www.intex.in/cdn/shop/products/3263.jpg?v=1648711134"
+    },
+    {
+      "id": "7ec8",
+      "productName": "Samsung M40",
+      "productPrice": 17299,
+      "productDescription": "Buy SAMSUNG Galaxy M40 online at best price with offers in India.",
+      "productImage": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m40-1.jpg"
+    },
+    {
+      "productName": "Samsung 7kg washing machine",
+      "productPrice": "16999",
+      "productDescription": "Buy Latest Washing Machines Online in India at Low Prices",
+      "productImage": "https://images.samsung.com/is/image/samsung/in-combo-wd90k6410ox-wd90k6410ox-tl-ashgray-261177804?$650_519_PNG$",
+      "id": "ff4e"
+    },
+    {
+      "id": "9d8a",
+      "productName": "Mixer Grinder",
+      "productPrice": 5999,
+      "productDescription": "Samsang Mixer Grinder, For Wet And Dry Grinding, 750W ",
+      "productImage": "https://st4.depositphotos.com/36223238/37758/i/450/depositphotos_377586606-stock-photo-mixer-grinder-white-background.jpg"
+    },
+    {
+      "id": "c02a",
+      "productName": "Zodiac Mixer Grinder",
+      "productPrice": 8999,
+      "productDescription": "Sturdy build quality and efficient grinding, with a range of accessories for different grinding needs. ",
+      "productImage": "https://m.media-amazon.com/images/I/61x14OTMuPL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "productName": "Blue soft teddy bear",
+      "productPrice": "699",
+      "productDescription": "Blue teddy bear",
+      "productImage": "https://i.pinimg.com/736x/a7/94/16/a7941650b1c5dab5e5152dc260d39c37.jpg",
+      "id": "59f0"
+    },
+    {
+      "productName": "Bluetooth Speaker",
+      "productPrice": "499",
+      "productDescription": "Super Bass",
+      "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfWNVAvmbR6KT5fHWxcsWly33QJMKAHBARmg&s",
+      "id": "ff5e"
+    },
+    {
+      "id": "6e89",
+      "productName": "smartwatch",
+      "productPrice": 2999,
+      "productDescription": "AMOLED Display",
+      "productImage": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQL1Ifw5kfDVnTL71yjwtcbA8DYHkvp78pxbXlJRRrexScsbxKcHQHlkDpm5MFCekEwfRK6GqvlXjupDU9z97viN3GaFSj5iQPg2NNJVxr0MOA90nX07lzCOJDMYdzpKLjDLsAzjahxLuc&usqp=CAc"
+    },
+    {
+      "id": "b19c",
+      "productName": "Perfume",
+      "productPrice": 499,
+      "productDescription": "EDP",
+      "productImage": "https://rukminim2.flixcart.com/image/850/1000/xif0q/perfume/e/r/n/100-black-edt-premium-long-lasting-perfume-for-men-eau-de-original-imagueamufhre5hx.jpeg?q=90&crop=false"
+    }
+  ],
+  "users": [
+    {
+      "userId": "",
+      "username": "Sabitha",
+      "email": "sabitha@gmail.com",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "8790475665",
+      "id": "51fc"
+    },
+    {
+      "userId": "",
+      "username": "Jagadeesh",
+      "email": "jagadeesh@gmail.com",
+      "password": "Jagadessh@12",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "8790475687",
+      "id": "d60e"
+    }
+  ],
+  "carts": [
+    {
+      "id": "113e",
+      "productName": "Samsung M40",
+      "productPrice": "50000",
+      "productCategory": "Mobile",
+      "productDescription": "Samsung product",
+      "productImage": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-m40-1.jpg",
+      "quantity": 1,
+      "productId": null,
+      "userId": "9633"
+    },
+    {
+      "id": "93bb",
+      "productName": "Boat Earbuds",
+      "productPrice": "1000",
+      "productCategory": "Electronics",
+      "productDescription": "Earbuds",
+      "productImage": "https://www.boat-lifestyle.com/cdn/shop/products/d6f427fc-0529-40e5-824b-cb849c1943ce_53eae3b9-6058-428c-aad1-f881e93dee87_288x.png?v=1629538280",
+      "quantity": 1,
+      "productId": null,
+      "userId": "9633"
+    },
+    {
+      "id": "2349",
+      "productName": "Iphone 15",
+      "productPrice": "89999",
+      "productCategory": "mobile",
+      "productDescription": "Get to know iPhone 15. USB-C. iOS 17.",
+      "productImage": "https://img.freepik.com/premium-psd/realistic-iphone-14-pro-max-3d-smartphone-screen-mockup-template-with-editable-background-psd_349001-545.jpg",
+      "quantity": 1,
+      "productId": null,
+      "userId": null
+    },
+    {
+      "id": "8bb7",
+      "productName": "Bluetooth neck band",
+      "productPrice": 1499,
+      "productCategory": "Electronics",
+      "productDescription": "Bluetooth neck band",
+      "productImage": "https://storage.googleapis.com/shy-pub/34186/1629541896483_neckband.png",
+      "quantity": 1,
+      "productId": "7eb2",
+      "userId": "8479"
+    },
+    {
+      "id": "7e22",
+      "productName": "Bluetooth neck band",
+      "productPrice": 1499,
+      "productCategory": "Electronics",
+      "productDescription": "Bluetooth neck band",
+      "productImage": "https://storage.googleapis.com/shy-pub/34186/1629541896483_neckband.png",
+      "quantity": 1,
+      "productId": "7eb2",
+      "userId": "51fc"
+    },
+    {
+      "id": "9fe8",
+      "productName": "Boat Earbuds",
+      "productPrice": 499,
+      "productDescription": "Buy latest wireless earbuds from boAt - India's No.1 Truly Wireless Brand.",
+      "productImage": "https://suprememobiles.in/cdn/shop/products/Boat-Airpodes-138-Earbuds_794b9f30-42ff-44a7-ae08-755775d71e4b.jpg?v=1664342796&width=1080",
+      "quantity": 1,
+      "productId": "6fe6",
+      "userId": "d60e"
+    }
+  ],
+  "orders": [
+    {
+      "id": "e78d",
+      "email": "ranjani@gmail.com",
+      "username": "Ranjani",
+      "address": "3A/B, Trichy, Tamilnadu",
+      "pincode": "621207",
+      "contact": "7654329753",
+      "totalPrice": 100,
+      "userId": "d60e"
+    },
+    {
+      "id": "2503",
+      "email": "jagadeesh@gmail.com",
+      "username": "Jagadeesh",
+      "address": "3a/c, Sivagi street",
+      "pincode": "600017",
+      "contact": "8790475687",
+      "totalPrice": 1599,
+      "userId": "d60e"
+    },
+    {
+      "id": "252b",
+      "email": "jagadeesh@gmail.com",
+      "username": "Jagadeesh",
+      "address": "3a/c, Sivagi street",
+      "pincode": "600017",
+      "contact": "8790475687",
+      "totalPrice": 71598,
+      "userId": "d60e"
+    },
+    {
+      "id": "0a88",
+      "email": "Jagadessh@gmail.com",
+      "username": "Jagadeesh",
+      "address": "chennai",
+      "pincode": "626123",
+      "contact": "9087654532",
+      "totalPrice": 2098,
+      "userId": "d60e"
+    }
+  ],
+  "shippers": [
+    {
+      "id": "967e",
+      "username": "Jothi",
+      "password": "Jothi@123",
+      "email": "jothi@gmail.com",
+      "houseno": "3a/c,",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "8790475675"
+    },
+    {
+      "id": "a32d",
+      "username": "Surya",
+      "password": "Surya@123",
+      "email": "surya@gmail.com",
+      "houseno": "3a/c,",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "6376895322"
+    },
+    {
+      "id": "0293",
+      "username": "Ranjani",
+      "password": "Ranjani@12",
+      "email": "ranjani@gmail.com",
+      "houseno": "3a/c,",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "7654567899"
+    },
+    {
+      "id": "8536",
+      "username": "Sabitha",
+      "password": "Sabitha@12",
+      "email": "sabitha@gmail.com",
+      "houseno": "3a/c,",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "8790475675",
+      "role": "SHIPPER"
+    },
+    {
+      "id": "40bd",
+      "username": "Sadhana",
+      "password": "Sadhana@12",
+      "email": "sadhana@gmail.com",
+      "houseno": "3a/c,",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "8790475675",
+      "role": "SHIPPER"
+    },
+    {
+      "id": "37bd",
+      "username": "Sidharth",
+      "password": "Sidhu@12",
+      "email": "sidharth@gmail.com",
+      "houseno": "3a/c,",
+      "area": "Sivagi street",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600017",
+      "mobileNumber": "8790475675",
+      "role": "SHIPPER"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<app-admin-header></app-admin-header>
+<div class="sidebar">
+  <a href="admin/users">Users</a>
+    <a href="admin/sellers">Sellers</a>
+    <a href="admin/shippers">Shippers</a>
+    <a href="admin/products">Products</a>
+    <a href="admin/orders">Orders</a>
+</div>
+<!--Search content-->
+<div class="search">
+  <input class="search-bar" type="text" name="username" [(ngModel)]="username" (ngModelChange)="Search()" placeholder="Search By Users Name">
+</div>
+<!-- Page content -->
+<div class="content">
+  <h2>Users</h2>
+  <p class="message-p">{{userMessage}}</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <!-- <th>UserID</th> -->
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Pincode</th>
+        <th>Mobile Number</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <!-- <td>{{user.userId}}</td> -->
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.state}}</td>
+        <td>{{user.pincode}}</td>
+        <td>{{user.mobileNumber}}</td>
+        <td>
+            
+          <a class="adjust-update-link" routerLink="/admin/users-update/{{user.id}}" [skipLocationChange]="true"> <fa-icon  [icon]="iconEdit"></fa-icon></a>  
+          <a class="adjust-delete-link"> <fa-icon (click)="deleteUsers(user.id)" [icon]="icon"></fa-icon></a>
+         
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

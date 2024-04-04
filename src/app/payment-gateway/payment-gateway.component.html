@@ -1,0 +1,11 @@
+<div class = "paypal-container">
+    <div class = "amount">Total: ${{amount}}</div>
+    <div #paymentRef></div>
+    <div class="cancel" (click)="cancel()">Cancel</div>
+</div>
+ 
+<div class = "payment-success" *ngIf="paymentSuccess">
+    <p><strong>Your transaction is successful</strong></p>
+    <p>Your transaction ID is {{transactionId}}</p>
+    <p>Your Product will be shipped soon</p>
+</div>

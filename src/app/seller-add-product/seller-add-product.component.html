@@ -1,0 +1,33 @@
+<div class="add-product">
+    <h2>Add New Product</h2>
+    <p class="message-p">{{addProductMessage}}</p>
+    <form #productForm="ngForm" class="common-form" (ngSubmit)="submit(productForm.value)">
+        <input type="text" class="form-input" placeholder="Enter Product Name" name="productName" ngModel required />
+        <div *ngIf="productForm.controls['productName'].invalid && (productForm.controls['productName'].dirty || productForm.controls['productName'].touched)" class="error-message">
+            <span *ngIf="productForm.controls['productName'].errors?.['required']" class="error">Product Name is required.</span>
+        </div>
+    
+        <input type="number" class="form-input" placeholder="Enter Product Price" name="productPrice" ngModel required />
+        <div *ngIf="productForm.controls['productPrice'].invalid && (productForm.controls['productPrice'].dirty || productForm.controls['productPrice'].touched)" class="error-message">
+            <span *ngIf="productForm.controls['productPrice'].errors?.['required']" class="error">Product Price is required.</span>
+        </div>
+    
+        <!-- <input type="text" class="form-input" placeholder="Enter Product Category" name="productCategory" ngModel required />
+        <div *ngIf="productForm.controls['productCategory'].invalid && (productForm.controls['productCategory'].dirty || productForm.controls['productCategory'].touched)" class="error-message">
+            <span *ngIf="productForm.controls['productCategory'].errors?.['required']" class="error">Product Category is required.</span>
+        </div> -->
+    
+        <textarea class="form-input" placeholder="Enter Product Description" name="productDescription" ngModel required></textarea>
+        <div *ngIf="productForm.controls['productDescription'].invalid && (productForm.controls['productDescription'].dirty || productForm.controls['productDescription'].touched)" class="error-message">
+            <span *ngIf="productForm.controls['productDescription'].errors?.['required']" class="error">Product Description is required.</span>
+        </div>
+    
+        <input type="url" class="form-input" placeholder="Enter Product Image URL" name="productImage" ngModel required />
+        <div *ngIf="productForm.controls['productImage'].invalid && (productForm.controls['productImage'].dirty || productForm.controls['productImage'].touched)" class="error-message">
+            <span *ngIf="productForm.controls['productImage'].errors?.['required']" class="error">Product Image URL is required.</span>
+            <span *ngIf="productForm.controls['productImage'].errors?.['url']" class="error">Invalid URL format.</span>
+        </div>
+    
+        <button type="submit" class="form-button" [disabled]="productForm.invalid">Add Product</button>
+    </form>
+</div>

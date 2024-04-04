@@ -1,0 +1,34 @@
+<div class="checkout">
+  <h2>Checkout</h2>
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Shipping address</h3>
+      <p class="message-p">{{orderMessage}}</p>
+      <form #orderData="ngForm" class="common-form" (ngSubmit)="orderNow(orderData.value)">
+        <input type="email" class="form-input" name="email" placeholder="Enter Your Email" ngModel required email />
+        <div *ngIf="orderData.controls['email']?.invalid && (orderData.controls['email'].dirty || orderData.controls['email'].touched)" class="error-message">
+          <span *ngIf="orderData.controls['email'].errors?.['required']" class="error">Email is required.</span>
+          <span *ngIf="orderData.controls['email'].errors?.['email']" class="error">Invalid email format.</span>
+        </div>
+        <input type="text" class="form-input" name="username" placeholder="Enter Your Name" ngModel required />
+        <div *ngIf="orderData.controls['username']?.invalid && (orderData.controls['username'].dirty || orderData.controls['username'].touched)" class="error-message">
+          <span *ngIf="orderData.controls['username'].errors?.['required']" class="error">Username is required.</span>
+        </div>
+        <input type="text" class="form-input" name="address" placeholder="Enter Your Address" ngModel required />
+        <div *ngIf="orderData.controls['address']?.invalid && (orderData.controls['address'].dirty || orderData.controls['address'].touched)" class="error-message">
+          <span *ngIf="orderData.controls['address'].errors?.['required']" class="error">Address is required.</span>
+        </div>
+        <input type="text" class="form-input" name="pincode" placeholder="Enter Your Pincode" ngModel required />
+        <div *ngIf="orderData.controls['pincode']?.invalid && (orderData.controls['pincode'].dirty || orderData.controls['pincode'].touched)" class="error-message">
+          <span *ngIf="orderData.controls['pincode'].errors?.['required']" class="error">Pincode is required.</span>
+        </div>
+        <input type="text" class="form-input" name="contact" placeholder="Enter Contact Number" pattern="[0-9]{10}" ngModel required />
+        <div *ngIf="orderData.controls['contact']?.invalid && (orderData.controls['contact'].dirty || orderData.controls['contact'].touched)" class="error-message">
+          <span *ngIf="orderData.controls['contact'].errors?.['pattern']" class="error">Contact number must be 10 digits.</span>
+          <span *ngIf="orderData.controls['contact'].errors?.['required']" class="error">Contact details are required.</span>
+        </div>
+        <button class="form-button" [disabled]="orderData.invalid">Order Now</button>
+      </form>
+    </div>
+  </div>
+</div>
